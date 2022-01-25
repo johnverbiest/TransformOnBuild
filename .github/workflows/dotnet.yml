@@ -57,3 +57,6 @@ jobs:
         name: packages
         path: '**/JohnVerbiest.TransformOnBuild*.nupkg'
   
+    - name: Publish nuget package
+      if: startsWith(github.ref, 'refs/heads/master')
+      run: nuget push **/JohnVerbiest.TransformOnBuild*.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_API_KEY}}
