@@ -1,0 +1,37 @@
+name: .NET
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  SOLUTION_FILE: JohnVerbiest.TransformOnBuild.MSBuild.Task.sln
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+      
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+    
+    - name: Restore Packages
+      run: nuget restore $SOLUTION_FILE
+    
+    - name: Remove test file
+      uses: JesseTG@rm@v1.0.2
+      with:
+        path: JohnVerbiest.TransformOnBuild.MSBuild.Task.Test\TextTemplate1.txt
+    
+    - name: Build
+      run: |
+        msbuild.exe $SOLUTION_FILE
+
