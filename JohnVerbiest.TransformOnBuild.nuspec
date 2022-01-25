@@ -8,6 +8,7 @@
     <authors>John Verbiest, Bram Vandenbussche, Daniel Cazzulino, Michael Naumov</authors>
     <owners>johnverbiest</owners>
     <language>en-US</language>
+    <license type="expression">MIT</license>
     <licenseUrl>https://github.com/johnverbiest/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/johnverbiest/TransformOnBuild</projectUrl>
     <iconUrl>https://raw2.github.com/johnverbiest/TransformOnBuild/master/icon/128.png</iconUrl>
@@ -29,6 +30,7 @@
     </releaseNotes>
   </metadata>
   <files>
-    <file src="build\*" target="build" />
+    <file src="JohnVerbiest.TransformOnBuild.MSBuild.Task\build\*" target="build" />
+    <file src="README.md" target="README.md" />
   </files>
 </package>

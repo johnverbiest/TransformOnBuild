@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Devops", "Devops", "{88C08D
 		.gitignore = .gitignore
 		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
 		gitversion.yml = gitversion.yml
+		JohnVerbiest.TransformOnBuild.nuspec = JohnVerbiest.TransformOnBuild.nuspec
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
