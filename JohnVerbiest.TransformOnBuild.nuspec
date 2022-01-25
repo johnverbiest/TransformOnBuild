@@ -30,7 +30,6 @@
     </releaseNotes>
     <contentFiles>
       <file src="JohnVerbiest.TransformOnBuild.MSBuild.Task\build\*" target="build" />
-      <file src="README.md" target="docs\readme.md" />
     </contentFiles>
   </metadata>
   <files>
