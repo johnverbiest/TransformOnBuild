@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Clarius.TransformOnBuild.MSBuild.Task")]
+[assembly: AssemblyTitle("JohnVerbiest.TransformOnBuild.MSBuild.Task")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Clarius.TransformOnBuild.MSBuild.Task")]
+[assembly: AssemblyProduct("JohnVerbiest.TransformOnBuild.MSBuild.Task")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("222c7308-d35f-49a3-bedc-ea351ac8dbf9")]
+[assembly: Guid("222c7308-d35f-49a3-bedc-ea351ac8db10")]
 
 // Version information for an assembly consists of the following four values:
 //
