@@ -29,4 +29,12 @@ obj/
 _ReSharper*/
 [Tt]est[Rr]esult*
 .vs/
+
+# Ignore build output
 JohnVerbiest.TransformOnBuild.MSBuild.Task/build/*.dll
+
+# Ignore nuget packages
+packages/
+
+# Ignore output of the texttemplate
+JohnVerbiest.TransformOnBuild.MSBuild.Task.Test/TextTemplate1.cs

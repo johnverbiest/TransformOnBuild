@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JohnVerbiest.TransformOnBui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JohnVerbiest.TransformOnBuild.MSBuild.Task.Test", "JohnVerbiest.TransformOnBuild.MSBuild.Task.Test\JohnVerbiest.TransformOnBuild.MSBuild.Task.Test.csproj", "{5426C844-05F8-45E8-8C7E-A734211E252F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Devops", "Devops", "{88C08D6F-9410-4BF2-9E0B-077DB08EC8B2}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

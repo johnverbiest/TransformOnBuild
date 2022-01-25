@@ -8,7 +8,6 @@ on:
 
 env:
   SOLUTION_FILE: JohnVerbiest.TransformOnBuild.MSBuild.Task.sln
-  TEST_FILE: JohnVerbiest.TransformOnBuild.MSBuild.Task.Test\TextTemplate1.txt
 
 jobs:
   build:
@@ -23,21 +22,26 @@ jobs:
       
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v1.0.5
-    
+
+    - name: Setup VSTest
+      uses: darenm/Setup-VSTest@v1
+
     - name: Restore Packages
       run: nuget restore ${{ env.SOLUTION_FILE }}
-    
-    - name: Remove test file ${{ env.TEST_FILE }}
-      uses: JesseTG/rm@v1.0.2
-      with:
-        path: ${{ env.TEST_FILE }}
-    
+        
     - name: Build Project
       run: |
         msbuild.exe ${{ env.SOLUTION_FILE }}
 
-    - name: Read test file ${{ env.TEST_FILE }}
-      uses: juliangruber/read-file-action@v1
-      with:
-        path: ${{ env.TEST_FILE }}
+    - name: Test Project
+      run: |
+        vstest.console.exe **/*.Test.dll
 
+    - name: Nuget Pack
+      run: nuget pack JohnVerbiest.TransformOnBuild.MSBuild.Task\JohnVerbiest.TransformOnBuild.nuspec
+
+    - name: Upload nuget package to artifact folder
+      uses: actions/upload-artifact@v2
+      with: 
+        name: nupkg
+        path: '**/JohnVerbiest.TransformOnBuild*.nupkg'
