@@ -8,6 +8,7 @@ on:
 
 env:
   SOLUTION_FILE: JohnVerbiest.TransformOnBuild.MSBuild.Task.sln
+  TEST_FILE: JohnVerbiest.TransformOnBuild.MSBuild.Task.Test\TextTemplate1.txt
 
 jobs:
   build:
@@ -26,12 +27,17 @@ jobs:
     - name: Restore Packages
       run: nuget restore $SOLUTION_FILE
     
-    - name: Remove test file
+    - name: Remove test file $TEST_FILE
       uses: JesseTG/rm@v1.0.2
       with:
-        path: JohnVerbiest.TransformOnBuild.MSBuild.Task.Test\TextTemplate1.txt
+        path: $TEST_FILE
     
-    - name: Build
+    - name: Build Project
       run: |
         msbuild.exe $SOLUTION_FILE
+
+    - name: Read test file $TEST_FILE
+      uses: juliangruber/read-file-action@v1
+      with:
+        path: $TEST_FILE
 
