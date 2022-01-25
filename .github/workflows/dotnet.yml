@@ -25,19 +25,19 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
     
     - name: Restore Packages
-      run: nuget restore $SOLUTION_FILE
+      run: nuget restore ${{ env.SOLUTION_FILE }}
     
-    - name: Remove test file $TEST_FILE
+    - name: Remove test file ${{ env.TEST_FILE }}
       uses: JesseTG/rm@v1.0.2
       with:
-        path: $TEST_FILE
+        path: ${{ env.TEST_FILE }}
     
     - name: Build Project
       run: |
-        msbuild.exe $SOLUTION_FILE
+        msbuild.exe ${{ env.SOLUTION_FILE }}
 
-    - name: Read test file $TEST_FILE
+    - name: Read test file ${{ env.TEST_FILE }}
       uses: juliangruber/read-file-action@v1
       with:
-        path: $TEST_FILE
+        path: ${{ env.TEST_FILE }}
 
