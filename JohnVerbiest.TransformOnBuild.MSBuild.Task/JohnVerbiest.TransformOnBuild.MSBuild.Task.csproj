@@ -47,7 +47,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="build\JohnVerbiest.TransformOnBuild.MSBuild.Task.targets" />
+    <None Include="build\JohnVerbiest.TransformOnBuild.targets" />
+    <None Include="_._" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

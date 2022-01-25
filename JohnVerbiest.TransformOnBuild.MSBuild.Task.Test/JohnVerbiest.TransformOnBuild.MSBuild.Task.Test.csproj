@@ -107,7 +107,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- In order to simulate the nuget install system, the targets file needs to be added manually -->
-  <Import Project="..\JohnVerbiest.TransformOnBuild.MSBuild.Task\build\JohnVerbiest.TransformOnBuild.MSBuild.Task.targets" />
+  <Import Project="..\JohnVerbiest.TransformOnBuild.MSBuild.Task\build\JohnVerbiest.TransformOnBuild.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
