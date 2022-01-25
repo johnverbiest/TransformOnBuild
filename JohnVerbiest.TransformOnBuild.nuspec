@@ -9,7 +9,6 @@
     <owners>johnverbiest</owners>
     <language>en-US</language>
     <license type="expression">MIT</license>
-    <licenseUrl>https://github.com/johnverbiest/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/johnverbiest/TransformOnBuild</projectUrl>
     <iconUrl>https://raw2.github.com/johnverbiest/TransformOnBuild/master/icon/128.png</iconUrl>
     <tags>visualstudio t4 text template transformation johnverbiest clariuslabs clarius.TransformOnBuild</tags>

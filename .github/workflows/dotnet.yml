@@ -49,7 +49,7 @@ jobs:
         vstest.console.exe **/*.Test.dll
 
     - name: Nuget Pack
-      run: nuget pack -Version ${{ steps.gitversion.outputs.nuGetVersionV2 }} JohnVerbiest.TransformOnBuild.MSBuild.Task\JohnVerbiest.TransformOnBuild.nuspec
+      run: nuget pack -Version ${{ steps.gitversion.outputs.nuGetVersionV2 }} JohnVerbiest.TransformOnBuild.nuspec
 
     - name: Upload nuget package to artifact folder
       uses: actions/upload-artifact@v2
