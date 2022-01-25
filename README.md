@@ -1,4 +1,4 @@
-![Icon](https://raw.github.com/clariuslabs/TransformOnBuild/master/icon/32.png) Transform Text Templates On Build
+![Icon](https://raw.github.com/johnverbiest/TransformOnBuild/master/icon/32.png) Transform Text Templates On Build
 ============
 
 Automatically transforms on build all files with a build action of `None` or `Content` that have the `TextTemplatingFileGenerator` or `TransformOnBuild` custom tools associated.
@@ -7,10 +7,10 @@ Automatically transforms on build all files with a build action of `None` or `Co
 
 ## Installation
 
-To install Clarius Transform Text Templates On Build, run the following command in the Package Manager Console:
+To install Transform Text Templates On Build, run the following command in the Package Manager Console:
 
 ```
-PM> Install-Package Clarius.TransformOnBuild
+PM> Install-Package JohnVerbiest.TransformOnBuild 
 ```
 
 Unlike the [officially suggested way](http://msdn.microsoft.com/en-us/library/ee847423.aspx), this package does not require any Visual Studio SDK to be installed on the machine or build server.
@@ -47,3 +47,9 @@ To access the parameter values from your text template, set `hostspecific` in th
         var foo = this.Host.ResolveParameterValue("", "", "Foo");
         var config = this.Host.ResolveParameterValue("", "", "Config");
     #>
+
+### History
+
+> Originally forked from https://github.com/clariuslabs/TransformOnBuild
+> Original NuPkg: https://www.nuget.org/packages/Clarius.TransformOnBuild/
+      
