@@ -1,31 +1,5 @@
 ﻿Testing output extension
 
-Foo: ResolveParameterValue foo failed with
-System.ArgumentNullException: Value cannot be null.
-Parameter name: directiveId
-
-Server stack trace: 
-   at Microsoft.VisualStudio.TextTemplating.VSHost.TextTemplatingService.ResolveParameterValue(String directiveId, String processorName, String parameterName)
-   at System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
-   at System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
-
-Exception rethrown at [0]: 
-   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
-   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
-   at Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue(String directiveId, String processorName, String parameterName)
-   at Microsoft.VisualStudio.TextTemplating493C6064D6CC3489C1FA1C6E70EB35B0FBF354C9448058853B0C48A38A1B8B936644A3BE2E0C9085428AC248747622147ABCCB989CFE8A108B3E69319B460771.GeneratedTextTransformation.TransformText()
-Config: ResolveParameterValue config failed with
-System.ArgumentNullException: Value cannot be null.
-Parameter name: directiveId
-
-Server stack trace: 
-   at Microsoft.VisualStudio.TextTemplating.VSHost.TextTemplatingService.ResolveParameterValue(String directiveId, String processorName, String parameterName)
-   at System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
-   at System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
-
-Exception rethrown at [0]: 
-   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
-   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
-   at Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue(String directiveId, String processorName, String parameterName)
-   at Microsoft.VisualStudio.TextTemplating493C6064D6CC3489C1FA1C6E70EB35B0FBF354C9448058853B0C48A38A1B8B936644A3BE2E0C9085428AC248747622147ABCCB989CFE8A108B3E69319B460771.GeneratedTextTransformation.TransformText()
+Foo: bar
+Config: Debug
 

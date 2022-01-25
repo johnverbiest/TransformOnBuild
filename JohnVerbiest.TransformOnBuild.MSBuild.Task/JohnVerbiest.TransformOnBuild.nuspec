@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata minClientVersion="2.8">
+    <id>JohnVerbiest.TransformOnBuild</id>
+    <version>1.0.0</version>
+    <title>Transform Text Templates On Build</title>
+    <description>Automatically transforms on build all files with a build action of `None/Content` that have the `TextTemplatingFileGenerator` custom tools associated, without requiring the installation of any Visual Studio SDK.</description>
+    <authors>John Verbiest, Bram Vandenbussche, Daniel Cazzulino, Michael Naumov</authors>
+    <owners>johnverbiest</owners>
+    <language>en-US</language>
+    <licenseUrl>https://github.com/johnverbiest/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/johnverbiest/TransformOnBuild</projectUrl>
+    <iconUrl>https://raw2.github.com/johnverbiest/TransformOnBuild/master/icon/128.png</iconUrl>
+    <tags>visualstudio t4 text template transformation johnverbiest clariuslabs clarius.TransformOnBuild</tags>
+    <developmentDependency>true</developmentDependency>
+    <releaseNotes>
+      * Migrated from Clarius.TransformOnBuild
+
+      * Support for:
+      - VS 2019
+      - VS 2017
+      - VS 2015
+      - And probably some older ones too
+
+      -------------------------------------------------------------------
+      Originally forked from https://github.com/clariuslabs/TransformOnBuild
+      Original NuPkg: https://www.nuget.org/packages/Clarius.TransformOnBuild/
+      -------------------------------------------------------------------
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="build\*" target="build" />
+  </files>
+</package>

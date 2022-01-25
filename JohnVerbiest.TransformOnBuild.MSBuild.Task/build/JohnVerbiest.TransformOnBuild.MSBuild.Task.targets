@@ -18,8 +18,8 @@
   ToolsVersion="4.0"
   xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <UsingTask
-    TaskName="Clarius.TransformOnBuild.MSBuild.Task.TransformOnBuildTask" 
-    AssemblyFile="$(MSBuildThisFileDirectory)\Clarius.TransformOnBuild.MSBuild.Task.dll"
+    TaskName="JohnVerbiest.TransformOnBuild.MSBuild.Task.TransformOnBuildTask" 
+    AssemblyFile="$(MSBuildThisFileDirectory)\JohnVerbiest.TransformOnBuild.MSBuild.Task.dll"
   />
   <Target
     Name="TransformOnBuild"

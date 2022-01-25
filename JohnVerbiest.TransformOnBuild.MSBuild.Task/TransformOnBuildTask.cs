@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 using Microsoft.Build.Execution;
 using Microsoft.Build.Framework;
 
-namespace Clarius.TransformOnBuild.MSBuild.Task
+namespace JohnVerbiest.TransformOnBuild.MSBuild.Task
 {
     // ReSharper disable once UnusedMember.Global
     public class TransformOnBuildTask : Microsoft.Build.Utilities.Task
