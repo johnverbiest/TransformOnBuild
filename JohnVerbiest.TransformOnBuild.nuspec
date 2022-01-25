@@ -10,7 +10,8 @@
     <language>en-US</language>
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/johnverbiest/TransformOnBuild</projectUrl>
-    <iconUrl>https://raw2.github.com/johnverbiest/TransformOnBuild/master/icon/128.png</iconUrl>
+    <icon>images\icon.png</icon>
+    <readme>docs\readme.md</readme>
     <tags>visualstudio t4 text template transformation johnverbiest clariuslabs clarius.TransformOnBuild</tags>
     <developmentDependency>true</developmentDependency>
     <releaseNotes>
@@ -30,6 +31,7 @@
   </metadata>
   <files>
     <file src="JohnVerbiest.TransformOnBuild.MSBuild.Task\build\*" target="build" />
-    <file src="README.md" target="README.md" />
+    <file src="README.md" target="docs\readme.md" />
+    <file src="icon/128.png" target="images\icon.png" />
   </files>
 </package>
