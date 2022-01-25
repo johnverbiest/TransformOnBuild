@@ -7,8 +7,8 @@
     <ProjectGuid>{5426C844-05F8-45E8-8C7E-A734211E252F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PassTranformParameters</RootNamespace>
-    <AssemblyName>PassTranformParameters</AssemblyName>
+    <RootNamespace>JohnVerbiest.TransformOnBuild.MSBuild.Task.Test</RootNamespace>
+    <AssemblyName>JohnVerbiest.TransformOnBuild.MSBuild.Task.Test</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -60,12 +60,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Clarius.TransformOnBuild.MSBuild.Task\Clarius.TransformOnBuild.MSBuild.Task\Clarius.TransformOnBuild.MSBuild.Task.csproj">
-      <Project>{eb0afc95-520d-4f4a-9709-e1ea69704954}</Project>
-      <Name>Clarius.TransformOnBuild.MSBuild.Task</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <TextTransformParameter Include="Foo">
       <Value>bar</Value>
       <InProject>false</InProject>
@@ -75,8 +69,15 @@
       <InProject>false</InProject>
     </TextTransformParameter>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JohnVerbiest.TransformOnBuild.MSBuild.Task\JohnVerbiest.TransformOnBuild.MSBuild.Task.csproj">
+      <Project>{48cd5178-ca31-4187-9415-de70ce77e5a9}</Project>
+      <Name>JohnVerbiest.TransformOnBuild.MSBuild.Task</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\..\nuget\build\Clarius.TransformOnBuild.targets" />
+  <!-- In order to simulate the nuget install system, the targets file needs to be added manually -->
+  <Import Project="..\JohnVerbiest.TransformOnBuild.MSBuild.Task\build\JohnVerbiest.TransformOnBuild.MSBuild.Task.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

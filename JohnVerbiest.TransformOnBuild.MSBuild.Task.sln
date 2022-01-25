@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JohnVerbiest.TransformOnBuild.MSBuild.Task", "JohnVerbiest.TransformOnBuild.MSBuild.Task\JohnVerbiest.TransformOnBuild.MSBuild.Task.csproj", "{48CD5178-CA31-4187-9415-DE70CE77E5A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JohnVerbiest.TransformOnBuild.MSBuild.Task.Test", "JohnVerbiest.TransformOnBuild.MSBuild.Task.Test\JohnVerbiest.TransformOnBuild.MSBuild.Task.Test.csproj", "{5426C844-05F8-45E8-8C7E-A734211E252F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48CD5178-CA31-4187-9415-DE70CE77E5A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48CD5178-CA31-4187-9415-DE70CE77E5A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48CD5178-CA31-4187-9415-DE70CE77E5A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48CD5178-CA31-4187-9415-DE70CE77E5A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5426C844-05F8-45E8-8C7E-A734211E252F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5426C844-05F8-45E8-8C7E-A734211E252F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5426C844-05F8-45E8-8C7E-A734211E252F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5426C844-05F8-45E8-8C7E-A734211E252F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D51E2192-043C-48B6-AB3D-9A9C33134CC1}
+	EndGlobalSection
+EndGlobal
