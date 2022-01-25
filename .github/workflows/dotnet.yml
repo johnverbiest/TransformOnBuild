@@ -27,7 +27,7 @@ jobs:
       run: nuget restore $SOLUTION_FILE
     
     - name: Remove test file
-      uses: JesseTG@rm@v1.0.2
+      uses: JesseTG/rm@v1.0.2
       with:
         path: JohnVerbiest.TransformOnBuild.MSBuild.Task.Test\TextTemplate1.txt
     
