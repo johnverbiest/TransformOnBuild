@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Clarius.TransformOnBuild.MSBuild.Task
+namespace JohnVerbiest.TransformOnBuild.MSBuild.Task
 {
     public static class ObjectExtensions
     {
