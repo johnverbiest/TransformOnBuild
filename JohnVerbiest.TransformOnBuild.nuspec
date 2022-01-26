@@ -12,21 +12,10 @@
     <projectUrl>https://github.com/johnverbiest/TransformOnBuild</projectUrl>
     <icon>images\icon.png</icon>
     <readme>docs\readme.md</readme>
-    <tags>visualstudio VS2019 VS2017 VS2015 VS 2019 2017 2015 t4 text template transformation johnverbiest clariuslabs clarius.TransformOnBuild</tags>
+    <tags>visualstudio VS2022 VS2019 VS2017 VS 2022 2019 2017 2015 t4 text template transformation johnverbiest clariuslabs clarius.TransformOnBuild</tags>
     <developmentDependency>true</developmentDependency>
     <releaseNotes>
-      * Migrated from Clarius.TransformOnBuild
-
-      * Support for:
-      - VS 2019
-      - VS 2017
-      - VS 2015
-      - And probably some older ones too
-
-      -------------------------------------------------------------------
-      Originally forked from https://github.com/clariuslabs/TransformOnBuild
-      Original NuPkg: https://www.nuget.org/packages/Clarius.TransformOnBuild/
-      -------------------------------------------------------------------
+      Add support for VS 2022
     </releaseNotes>
     <dependencies>
       <group targetFramework=".NETStandard1.0" />
