@@ -168,10 +168,12 @@ namespace JohnVerbiest.TransformOnBuild.MSBuild.Task
                 $@"{_programFilesX86}\Microsoft Visual Studio\2022\Professional\Common7\IDE\TextTransform.exe",
                 $@"{_programFilesX86}\Microsoft Visual Studio\2022\Community\Common7\IDE\TextTransform.exe",
                 $@"{_programFilesX86}\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\TextTransform.exe",
+                $@"{_programFilesX86}\Microsoft Visual Studio\2022\Preview\Common7\IDE\TextTransform.exe",
                 $@"{_programFiles}\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\TextTransform.exe",
                 $@"{_programFiles}\Microsoft Visual Studio\2022\Professional\Common7\IDE\TextTransform.exe",
                 $@"{_programFiles}\Microsoft Visual Studio\2022\Community\Common7\IDE\TextTransform.exe",
                 $@"{_programFiles}\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\TextTransform.exe",
+                $@"{_programFiles}\Microsoft Visual Studio\2022\Preview\Common7\IDE\TextTransform.exe",
                 
                 // Other Sources
                 $@"{_programFilesX86}\Microsoft Visual Studio\Preview\Professional\Common7\IDE\TextTransform.exe",
