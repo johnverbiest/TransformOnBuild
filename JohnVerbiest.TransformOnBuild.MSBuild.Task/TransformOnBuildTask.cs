@@ -191,13 +191,11 @@ namespace JohnVerbiest.TransformOnBuild.MSBuild.Task
             {
                 if (!string.IsNullOrEmpty(textTransformPathCandidate) && File.Exists(textTransformPathCandidate))
                 {
-                    Console.WriteLine($"{textTransformPathCandidate}: Found")
                     return textTransformPathCandidate;
                 }
-                Console.WriteLine($"{textTransformPathCandidate}: Not found")
             }
 
-            throw new Exception("Failed to find TextTransform.exe");
+            throw new Exception("Failed to find TextTransform.exe in any of :" + string.Join(", ", textTransformPathCandidates));
         }
 
         /// <summary>
