@@ -141,11 +141,8 @@ namespace JohnVerbiest.TransformOnBuild.MSBuild.Task
             if (string.IsNullOrEmpty(_commonProgramFiles))
                 _commonProgramFiles = GetPropertyValue("CommonProgramFiles");
 
-            _programFiles = Environment.GetEnvironmentVariable("ProgramFiles");
-
+            _programFiles = Environment.GetEnvironmentVariable("ProgramW6432");
             _programFilesX86 = Environment.GetEnvironmentVariable("ProgramFiles(x86)");
-            if (string.IsNullOrEmpty(_programFilesX86))
-                _programFilesX86 = _programFilesX86;
             
 
             var textTransformPathCandidates = new[]
